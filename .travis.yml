@@ -1,0 +1,10 @@
+language: objective-c  #Travis only recognizes Obj-C, Xcode will handle the fact that this is Swift
+
+osx_image: xcode7.0
+
+xcode_project: "APP/HMC Word Scroll/HMC Word Scroll.xcodeproj"
+xcode_scheme: "APP/HMC Word Scroll/HMC Word Scroll"
+xcode_sdk: ipadsimulator8.4
+
+script:
+	- xctool "APP/HMC Word Scroll/HMC Word ScrollTests"
